@@ -5,9 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * TODO Sprint add-controllers.
- */
+
 @RestController
 @RequestMapping("/users")
 @RequiredArgsConstructor
