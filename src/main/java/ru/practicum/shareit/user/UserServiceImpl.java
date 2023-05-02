@@ -54,8 +54,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto update(UserDto userDto, Long id) {
-        if (userRepository.checkEmail(userDto.getEmail())
-                && userDto.getEmail().equals(userRepository.getId(id).getEmail())) {
+        if (userRepository.checkEmail(userDto.getEmail())) {
             if (userRepository.isExist(id)) {
                 User user = userRepository.getId(id);
 
